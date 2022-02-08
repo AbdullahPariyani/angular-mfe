@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mfe-root';
-  MFE_USER_LIST = 'http://127.0.0.1:9002/main.js';
-  MFE_USER_FORM = 'http://127.0.0.1:9001/main.js'
+  MFE_USER_LIST = 'http://localhost:9001/main.js';
+  MFE_USER_FORM = 'http://localhost:9002/main.js';
+  counter = 0;
+
+  constructor() {
+    setInterval(() => {
+      this.counter = this.counter + 1
+    }, 2000)
+  }
 }

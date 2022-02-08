@@ -1,2 +1,5 @@
-<mfe-user-list *axLazyElement="MFE_USER_LIST"></mfe-user-list>
-<mfe-user-form *axLazyElement="MFE_USER_FORM"></mfe-user-form>
+<mfe-user-list *axLazyElement="MFE_USER_LIST; errorTemplate: error" userNameInput="{{counter}}"></mfe-user-list>
+<mfe-user-form *axLazyElement=" MFE_USER_FORM; errorTemplate: error">
+</mfe-user-form>
+
+<ng-template #error>Loading of AppVault MFE failed...</ng-template>
