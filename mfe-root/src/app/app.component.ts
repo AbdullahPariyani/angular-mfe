@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mfe-root';
-  MFE_USER_LIST = 'http://localhost:9001/main.js';
-  MFE_USER_FORM = 'http://localhost:9002/main.js';
+
+  // local
+  // MFE_USER_LIST = 'http://localhost:9001/main.js';
+  // MFE_USER_FORM = 'http://localhost:9002/main.js';
+
+  // prod
+  MFE_USER_LIST = 'https://mfe-user-list.web.app/main.js';
+  MFE_USER_FORM = 'https://mfe-user-form.web.app/main.js';
   counter = 0;
 
   constructor() {

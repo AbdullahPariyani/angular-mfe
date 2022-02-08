@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/mfe-user-list",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

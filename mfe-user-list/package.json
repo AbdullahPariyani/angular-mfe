@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "build:mfe": "ng build --prod --output-hashing none --single-bundle true",
     "start:mfe": "npm run build:mfe && http-server ./dist/mfe-user-list -p 9001",
-    "test": "ng test"
+    "test": "ng test",
+    "build:deploy": "npm run build:mfe && firebase deploy"
   },
   "private": true,
   "dependencies": {
